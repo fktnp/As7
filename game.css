@@ -1,0 +1,103 @@
+#layer {
+    position: relative;
+    width: 500px;
+    height: 500px; 
+    border: 3px solid black;
+}
+
+.square {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid black;
+}
+
+.maroon{
+    background-color: maroon; 
+}
+.lightgreen{
+    background-color: lightgreen; 
+}
+
+.magenta{
+    background-color: magenta; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4a7a7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: #fff;
+  }
+  
+  legend {
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  input[type="text"],
+  select {
+    width: 95%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button#start {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button#start:hover {
+    background-color: #0056b3;
+  }
+  
+
+  #timerClock {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  #clock {
+    font-size: 24px;
+  }
+  
+
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+  }
+  
+  #layer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
